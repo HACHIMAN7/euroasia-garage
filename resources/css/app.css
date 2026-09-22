@@ -7,27 +7,48 @@
     --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 
-    /* Automotive theme colors */
-    --color-brand-50: oklch(0.97 0.01 65);
-    --color-brand-100: oklch(0.93 0.03 65);
-    --color-brand-200: oklch(0.87 0.06 60);
-    --color-brand-300: oklch(0.79 0.1 55);
-    --color-brand-400: oklch(0.72 0.15 50);
-    --color-brand-500: oklch(0.65 0.19 45);
-    --color-brand-600: oklch(0.58 0.18 40);
-    --color-brand-700: oklch(0.5 0.15 38);
-    --color-brand-800: oklch(0.42 0.12 36);
-    --color-brand-900: oklch(0.35 0.09 35);
+    /* Buck Auto / Automotive UI Kit Color Palette */
+    --color-rust-50: #fef3f2;
+    --color-rust-100: #fee4e2;
+    --color-rust-200: #fecdca;
+    --color-rust-300: #fda29b;
+    --color-rust-400: #f06a58;
+    --color-rust-500: #d9442e;
+    --color-rust-600: #c83823;
+    --color-rust-700: #a72c1a;
+    --color-rust-800: #882618;
+    --color-rust-900: #712318;
+    --color-rust-950: #3e0e07;
 
-    --color-dark-50: oklch(0.97 0.005 250);
-    --color-dark-100: oklch(0.93 0.01 250);
-    --color-dark-200: oklch(0.85 0.015 250);
-    --color-dark-300: oklch(0.7 0.015 250);
-    --color-dark-400: oklch(0.55 0.015 250);
-    --color-dark-500: oklch(0.4 0.015 250);
-    --color-dark-600: oklch(0.3 0.015 250);
-    --color-dark-700: oklch(0.23 0.015 250);
-    --color-dark-800: oklch(0.18 0.015 250);
-    --color-dark-900: oklch(0.13 0.015 250);
-    --color-dark-950: oklch(0.09 0.015 250);
+    --color-navy-800: #1a2233;
+    --color-navy-900: #111723;
+    --color-navy-950: #0b0f17;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.35;
+        transform: scale(1.05);
+    }
+}
+
+.animate-float {
+    animation: float 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+    animation: pulseGlow 6s ease-in-out infinite;
 }

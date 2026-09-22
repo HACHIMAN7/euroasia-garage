@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Services\FirebaseService;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -12,9 +11,9 @@ class HomeController extends Controller
     /**
      * Display the home page with business data.
      */
-    public function __invoke(FirebaseService $firebase): View
+    public function __invoke(): View
     {
-        $business = $firebase->getBusinessData();
+        $business = config('garage');
         $locale = app()->getLocale();
 
         return view('home', compact('business', 'locale'));

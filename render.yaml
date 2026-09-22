@@ -27,5 +27,3 @@ services:
         value: cookie
       - key: CACHE_STORE
         value: file
-      - key: FIREBASE_DATABASE_URL
-        sync: false

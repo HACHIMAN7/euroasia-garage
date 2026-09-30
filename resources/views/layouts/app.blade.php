@@ -10,6 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Euro Asia Garage — Professional car repair workshop in Durian Tunggal, Malacca. Engine repair, brake service, periodic maintenance, and diagnostics.">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>{{ $siteName }} — {{ __('Your Trusted Auto Repair Partner') }}</title>
 
     <link rel="preconnect" href="https://fonts.bunny.net">
